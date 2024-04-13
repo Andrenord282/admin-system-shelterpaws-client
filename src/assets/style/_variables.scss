@@ -1,0 +1,65 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+
+    --black: #000000;
+    --black-light: rgba(0, 0, 0, 0.2);
+    --black-light-shadow: rgba(0, 0, 0, 0.25);
+    --red-light: #f54d4d;
+    --white: #ffffff;
+    --white-light: rgba(255, 255, 255, 0.5);
+    --spun-pearl: #afadb5;
+    --smalt-blue: #518581;
+    --cascade: #86aaa7;
+    --faded-jade: #487773;
+    --alto: #d9d9d9;
+
+    --text-primary-color: var(--black);
+    --text-primary-disabled-color: var(--black-light);
+
+    --text-error-color: var(--red-light);
+
+    --text-secondary-color: var(--spun-pearl);
+
+    --text-accent-color: var(--smalt-blue);
+
+    --loader-primary-color: var(--smalt-blue);
+
+    --loader-secondary-color: var(--white);
+
+    --body-primary-bg: var(--cascade);
+
+    --component-primary-bg: var(--white);
+    --component-primary-bg-disabled: var(--white-light);
+
+    --component-light-bg: var(--cascade);
+
+    --img-primary-bg: var(--alto);
+
+    --button-primary-text: var(--white);
+    --button-primary-bg: var(--smalt-blue);
+    --button-primary-bg-hover: var(--cascade);
+    --button-primary-bg-active: var(--faded-jade);
+    --button-primary-bg-disabled: var(--alto);
+
+    --button-secondary-text: var(--black);
+    --button-secondary-bg: var(--white);
+
+    --button-light-bg: var(--cascade);
+
+    --input-primary-placeholder: var(--spun-pearl);
+    --input-primary-border: var(--spun-pearl);
+    --input-primary-border-hover: var(--smalt-blue);
+    --input-primary-border-active: var(--smalt-blue);
+    --input-error-border: var(--red-light);
+
+    --space-xl: 24px;
+    --space-l: 20px;
+    --space-m: 16px;
+    --space-s: 14px;
+    --space-xs: 12px;
+    --space-xxs: 8px;
+
+    --size-icon-l: 60px;
+    --size-icon-m: 48px;
+    --size-icon-s: 24px;
+}

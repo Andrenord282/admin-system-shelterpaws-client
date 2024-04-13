@@ -1,0 +1,38 @@
+.auth-from {
+    font-family: var(--primary-font);
+    padding: 20px 0;
+}
+
+.auth-from__input-item {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.auth-from__input-item-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.auth-from__input-item-input {
+    padding: 10px;
+    border: 1px solid var(--primary-input-border);
+
+    &:focus {
+        border: 1px solid var(--primary-active-input-border);
+    }
+}
+
+.auth-from__input-item-error {
+    color: var(--warning-text-color);
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.auth-from__button {
+    width: 100%;
+    margin-top: 40px;
+}

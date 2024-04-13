@@ -1,0 +1,16 @@
+.auth-sign-in {
+    &__item-list {
+        margin-bottom: var(--space-m);
+    }
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-bottom: var(--space-s);
+        }
+    }
+
+    &__navigate-list {
+        display: flex;
+        justify-content: center;
+    }
+}

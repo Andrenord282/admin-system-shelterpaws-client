@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-color: var(--component-primary-bg);
+}
+
+.header__container {
+    max-width: 1960px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header__content {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    padding: 14px 0;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}

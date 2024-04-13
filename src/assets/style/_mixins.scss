@@ -1,0 +1,124 @@
+$breakpoint-xsmall: 345px;
+$breakpoint-small: 475px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1024px;
+$breakpoint-extra-large: 1300px;
+
+@mixin for-desktop {
+    @media (min-width: $breakpoint-large) {
+        @content;
+    }
+}
+
+@mixin for-large-desktop {
+    @media (min-width: $breakpoint-extra-large) {
+        @content;
+    }
+}
+
+@mixin for-tablet {
+    @media (min-width: $breakpoint-medium) and (max-width: $breakpoint-large - 0.1px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-down {
+    @media (max-width: $breakpoint-large - 0.1px) {
+        @content;
+    }
+}
+
+@mixin from-tablet-to-mobile {
+    @media (max-width: $breakpoint-medium - 0.1px) {
+        @content;
+    }
+}
+
+@mixin for-mobile {
+    @media (max-width: $breakpoint-small - 0.1px) {
+        @content;
+    }
+}
+
+@mixin for-small-mobile {
+    @media (max-width: $breakpoint-xsmall - 0.1px) {
+        @content;
+    }
+}
+
+/* =========================
+  States
+========================= */
+
+@mixin activeHover {
+    @media (hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    &:active {
+        @content;
+    }
+}
+
+/* =========================
+  Layout
+========================= */
+
+@mixin section {
+    position: relative;
+    padding: 50px 0;
+}
+
+/* =========================
+  Typography
+========================= */
+
+@mixin heading-xl {
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+@mixin heading-l {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@mixin heading-m {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@mixin paragraph-xl {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@mixin paragraph-l {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin paragraph-m {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin paragraph-s {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@mixin paragraph-xs {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}

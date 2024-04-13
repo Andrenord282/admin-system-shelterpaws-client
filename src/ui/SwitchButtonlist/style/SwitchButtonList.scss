@@ -1,0 +1,40 @@
+.switch-button-list {
+    --cursor-duration: 0.2s;
+    --active-item-delay: 0.2s;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--component-light-bg);
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__cursor {
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        border-radius: 10px;
+        background-color: var(--button-primary-bg);
+        transition: all var(--cursor-duration) linear;
+    }
+
+    &__item {
+        width: 50%;
+        z-index: 1;
+        border-radius: 10px;
+        background-color: var(--button-light-bg);
+        transition: all 0s linear 0s;
+
+        &.active {
+            z-index: 3;
+            background-color: transparent;
+            transition: all 0s linear var(--active-item-delay);
+
+            @media (hover: hover) {
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

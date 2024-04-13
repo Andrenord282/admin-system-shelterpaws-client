@@ -1,0 +1,1 @@
+export { shelterAdmin } from './shelterAdmin';

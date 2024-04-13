@@ -1,0 +1,22 @@
+.auth-page {
+    width: 100%;
+}
+
+.auth-page__container {
+}
+
+.auth-page__content {
+    max-width: 360px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.auth-page__form {
+    border-radius: 20px;
+    padding: 40px 20px;
+    background-color: var(--component-primary-bg);
+}
+
+.auth-page__form-switcher {
+    margin-bottom: 20px;
+}
